@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #000;
+  color: #000;
+  font-family: arial;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  position: relative;
+  top: 10%;
+  width: 40%;
+  left: 150%;
+  margin-top: -10.5px;
+  font-size: 30px;
+  height: 50px;
+}
+
+.wave {
+  color: #000;
+  animation: 0.5s color infinite;
+}
+
+@keyframes color {
+  50% {
+    color: rgba(224, 7, 7, 0.533);
+  }
+}
+
+
+
+ul.submenu{
+  background-color: #212121;
+  border-radius:5px;
+  display:inline-block;
+  padding:4px 10px;
+  margin:0;
+  overflow:hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background: #ff7676;
+  font-family: roboto;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+}
+
+.wrapper ul {
+  list-style: none;
+}
+
+.wrapper ul li {
+  width: 65px;
+  height: 65px;
+  margin: 0 15px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  float: left;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa {
+  color: #fff;
+  line-height: 65px;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+
+
+/* For creating the text below the icons, I'm going to use the before pseudo element.*/
+ul li.facebook:before{
+  content: "facebook";
+}
+
+ul li.twitter:before{
+  content: "twitter";
+  left: 5px;
+}
+
+ul li.instagram:before{
+  content: "instagram";
+}
+
+ul li.google:before{
+  content: "google";
+  left: 5px;
+}
+
+ul li.whatsapp:before{
+  content: "whatsapp";
+}
+
+ul li:before{
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: -5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+
+/*facebook*/
+.wrapper ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li.facebook:hover:before{
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+}
+
+/*twitter*/
+.wrapper ul li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li.twitter:hover:before{
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li.instagram:hover:before{
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+}
+
+.sticky {
+  transition: ease .3s;
+}
+
+.sticky-pin {
+  position: fixed;
+  top: 0;
+}
+
